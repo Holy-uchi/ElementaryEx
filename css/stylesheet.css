@@ -1,0 +1,732 @@
+@charset "utf-8";
+
+/*----------------------memo------------------------
+ベース
+--------------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #444444;
+  /* max-width: 1920px; */
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #444444;
+}
+
+li {
+  list-style: none;
+}
+
+/*----------------------memo------------------------
+ヘッダー
+--------------------------------------------------*/
+.header-wrapper {
+  display: flex;
+  max-width: 1180px;
+  height: 130px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  width: 263px;
+  vertical-align: top;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-text {
+  height: 20px;
+  font-size: 1.4rem;
+}
+
+.phone-number {
+  display: flex;
+  height: 35px;
+  align-items: flex-end;
+}
+
+.header-info .phone-number {
+  margin-top: 7px;
+}
+
+.phone-number a {
+  display: inline-block;
+  height: 26px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #21a937;
+  line-height: 26px;
+  margin-left: 4.78px;
+}
+
+/*----------------------memo------------------------
+main-visualセクション
+--------------------------------------------------*/
+#main-visual {
+  position: relative;
+  height: 947px;
+  background-image: url("../image/fv@2x.png");
+  background-size: cover;
+  background-position: 80%;
+}
+
+.marker {
+  display: inline-block;
+
+  background: linear-gradient(transparent 71.42%, #99e5a5 0%);
+}
+
+.hidden {
+  display: none;
+}
+
+.main-text {
+  position: absolute;
+  top: 133px;
+  left: 211px;
+  display: flex;
+  width: fit-content;
+  gap: 80px;
+  flex-direction: row-reverse;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  width: 102px;
+  height: 565px;
+  background-color: #fff;
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 102px;
+  padding-top: 18px;
+}
+
+.vertical-text span {
+  color: #21a937;
+}
+
+/*----------------------memo------------------------
+aboutセクション
+--------------------------------------------------*/
+#about {
+  padding: 162px 20px 82px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+}
+#about .marker:nth-of-type(2) {
+  margin-top: 32px;
+}
+
+.about-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 690px;
+  height: 420px;
+}
+
+.content-title {
+  margin-top: 31px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.content-title > div:nth-child(1) {
+  width: 276px;
+}
+
+.about-text {
+  line-height: 2.375;
+  margin: 37px 0;
+}
+
+.about-text span {
+  display: inline-block;
+}
+
+/*----------------------memo------------------------
+contentsセクション  
+--------------------------------------------------*/
+#contents {
+  background-color: #f5fcf8;
+  padding: 78px 20px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.section-title span {
+  width: 103px;
+}
+
+#contents .wrapper > p {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+#contents .wrapper > p span {
+  display: inline-block;
+}
+
+.contents-container {
+  display: flex;
+
+  max-width: 1180px;
+  flex-grow: 1;
+  flex-basis: 380px;
+  flex-shrink: 1;
+  gap: 20px;
+}
+
+.contents-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid black;
+  width: 380px;
+  height: 591px;
+  background-color: #fff;
+  border: 2px solid #c9c9c9;
+  border-radius: 10px;
+}
+
+.item-title {
+  height: 35px;
+  margin: 30px 0 45px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.item-text {
+  width: 90%;
+  font-weight: bold;
+  line-height: 38px;
+}
+
+.item-image {
+  margin-top: auto;
+  height: 187px;
+  width: 187px;
+}
+
+/*----------------------memo------------------------
+newsセクション
+--------------------------------------------------*/
+#news {
+  background-color: #f5fcf8;
+  padding: 81px 20px 112px;
+}
+
+#news .section-title {
+  margin-bottom: 70px;
+}
+
+.news-list {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px #00000029;
+  padding: 30px 30px 107.5px;
+}
+
+.news-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1048px;
+}
+
+.news-list ol {
+  width: 100%;
+}
+
+.news-list ol li {
+  width: 100%;
+  height: 62px;
+  border-bottom: 2px solid #e7e7e7;
+  font-weight: bold;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  display: inline-block;
+  width: 86px;
+  margin-right: 30px;
+  font-size: 1.6rem;
+  color: #21a937;
+}
+
+.category {
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+
+  margin-right: 30px;
+  background-color: #444444;
+  color: #fff;
+}
+
+.news-title {
+  display: inline-block;
+  width: calc(100% - 253px);
+  font-size: 1.6rem;
+
+  margin-right: 27px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.more {
+  position: absolute;
+  bottom: -55.5px;
+  right: -17.5px;
+  margin-top: 40px;
+  text-align: right;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.more::after {
+  display: inline-block;
+  box-sizing: content-box;
+  margin-left: 7.5px;
+  content: "";
+  height: 0;
+  border-left: 10px solid #444444;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+/*----------------------memo------------------------
+フッター
+--------------------------------------------------*/
+footer {
+  padding: 196px 20px 163px;
+}
+
+.footer-wrapper {
+  display: flex;
+  width: 1180px;
+  height: 440px;
+
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+
+.footer-logo,
+.adress,
+footer .phone-number,
+.whole,
+.copyright {
+  width: 533px;
+}
+
+.adress,
+.phone-number {
+  margin-top: 24px;
+}
+
+.footer-logo img {
+  width: 263px;
+  vertical-align: top;
+}
+
+.adress span + span {
+  margin-left: 16px;
+}
+
+footer .phone-number {
+  margin-bottom: 28.5px;
+}
+
+/*----------------------memo------------------------
+footerの中のwholeここから
+--------------------------------------------------*/
+.whole {
+  padding: 18px 0;
+  height: 184px;
+  border-top: 2px solid #e7e7e7;
+  border-bottom: 2px solid #e7e7e7;
+  font-size: 1.4rem;
+}
+
+.responsive-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content;
+  height: 100%;
+}
+
+.open {
+  display: flex;
+  width: fit-content;
+  height: 95px;
+  margin-bottom: auto;
+}
+
+.open-text {
+  padding: 1px 0;
+  width: 84px;
+  border-right: 2px solid #e7e7e7;
+}
+
+.open-text span {
+  line-height: 31px;
+}
+
+.open-date {
+  padding: 1px 0;
+}
+
+.open-date li {
+  height: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.open-date li span:nth-child(1) {
+  margin-left: 26px;
+}
+
+.open-date li span:nth-child(2) {
+  margin-left: 22px;
+}
+
+.open-date li span:nth-child(3) {
+  margin-left: 16px;
+}
+
+.close {
+  display: flex;
+  height: 29px;
+  width: fit-content;
+}
+
+.close-text {
+  width: 84px;
+  border-right: 2px solid #e7e7e7;
+}
+
+.close-text span {
+  line-height: 29px;
+}
+
+.close-date span {
+  margin-left: 26px;
+  line-height: 29px;
+}
+
+/*----------------------memo------------------------
+ここまで
+--------------------------------------------------*/
+.copyright {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 11px;
+}
+
+.gmap {
+  width: 608px;
+  height: 440px;
+  order: 6;
+  margin-right: auto;
+}
+
+.gMap {
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+/*----------------------memo------------------------
+フォントは
+font-family: 'Noto Sans JP', sans-serif;
+と指定する。
+--------------------------------------------------*/
+
+/*----------------------memo------------------------
+レスポンシブ対応
+--------------------------------------------------*/
+
+/*----------------------memo------------------------
+ヘッダー
+--------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  .header-wrapper {
+    display: block;
+    margin-top: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .site-logo {
+    width: 150px;
+  }
+
+  .header-info {
+    align-items: center;
+  }
+
+  header .phone-number {
+    transform: scale(0.8);
+  }
+
+  .header-info .phone-number {
+    margin-top: 0;
+  }
+}
+
+/*----------------------memo------------------------
+main-visual　セクション
+--------------------------------------------------*/
+
+@media screen and (max-width: 960px) {
+  .main-text {
+    transform: scale(0.8);
+    left: 5%;
+    top: 400px;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+}
+
+@media screen and (max-width: 600px) {
+  #main-visual {
+    height: 600px;
+  }
+
+  .main-text {
+    transform: scale(0.6);
+    top: 130px;
+    left: -30px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  #main-visual .wrapper {
+    position: relative;
+  }
+  .main-text {
+    left: -162px;
+  }
+}
+
+/*----------------------memo------------------------
+aboutセクション
+--------------------------------------------------*/
+
+@media screen and (max-width: 1160px) {
+  #about {
+    padding: 80px 0;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 90%;
+    margin: 37px auto;
+  }
+
+  .content-title {
+    text-align: center;
+  }
+  .about-image {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/*----------------------memo------------------------
+contentsセクション
+--------------------------------------------------*/
+
+@media screen and (max-width: 1160px) {
+  .contents-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contents-item {
+    width: 90%;
+    max-width: 500px;
+    height: 650px;
+  }
+}
+
+/*----------------------memo------------------------
+newsセクション
+--------------------------------------------------*/
+@media screen and (max-width: 960px) {
+  .news-list ol li {
+    min-height: 62px;
+    height: auto;
+  }
+  .date,
+  .category {
+    margin: 0;
+  }
+
+  .news-responsive {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-right: 30px;
+  }
+
+  .news-title {
+    width: 100%;
+    overflow: initial;
+    white-space: initial;
+    text-overflow: initial;
+    margin-right: 0;
+  }
+
+  .news-list {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .news-title {
+    font-size: 1.4rem;
+  }
+  .news-responsive {
+    margin-right: 15px;
+  }
+  .more {
+    font-size: 1.3rem;
+  }
+}
+
+/*----------------------memo------------------------
+フッター
+--------------------------------------------------*/
+@media screen and (max-width: 1220px) {
+  footer {
+    padding: 50px 0;
+  }
+
+  .footer-wrapper {
+    width: auto;
+    height: auto;
+    align-items: center;
+  }
+
+  .footer-logo,
+  .adress,
+  .copyright {
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .phone-number {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .responsive-wrapper {
+    margin: 0 auto;
+  }
+
+  .whole {
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 533px;
+  }
+
+  .gmap {
+    margin-right: 0;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+  }
+
+  .gMap {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+  }
+
+  .copyright {
+    order: 7;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .whole {
+    font-size: 1.2rem;
+  }
+
+  .open-date li span:nth-child(1) {
+    margin-left: 3vw;
+  }
+  .open-date li span:nth-child(2) {
+    margin-left: 3vw;
+  }
+  .open-date li span:nth-child(3) {
+    margin-left: 2vw;
+  }
+  .open-text,
+  .close-text {
+    width: 68px;
+  }
+  .open-text span,
+  .close-text span {
+    margin-right: 10px;
+  }
+  .close-date span {
+    margin-left: 3vw;
+  }
+}
