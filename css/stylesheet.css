@@ -89,7 +89,7 @@ main-visualセクション
 #main-visual {
   position: relative;
   height: 947px;
-  background-image: url("../image/fv@2x.png");
+  background-image: url("../image/fv.png");
   background-size: cover;
   background-position: 80%;
 }
